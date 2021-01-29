@@ -13,20 +13,6 @@ namespace GettingStartedCalendar
 		public MainPage()
 		{
 			InitializeComponent();
-            SfCalendar calendar = new SfCalendar();
-            calendar.MoveToDate = new DateTime(2018, 12, 31);
-            calendar.MinDate = new DateTime(2018, 10, 25);
-            calendar.MaxDate = new DateTime(2018, 12, 31);
-            List<DateTime> black_dates = new List<DateTime>();
-
-            for (int i = 0; i < 5; i++)
-            {
-                DateTime date = new DateTime(2018, 12, 1 + i);
-                black_dates.Add(date);
-            }
-
-            calendar.BlackoutDates = black_dates;
-            this.Content = calendar;
 		}
 	}
 }
